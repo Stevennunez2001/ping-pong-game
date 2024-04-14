@@ -1,0 +1,128 @@
+[debug] [2024-04-14T03:45:49.021Z] ----------------------------------------------------------------------
+[debug] [2024-04-14T03:45:49.023Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\steve\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2024-04-14T03:45:49.023Z] CLI Version:   12.9.1
+[debug] [2024-04-14T03:45:49.024Z] Platform:      win32
+[debug] [2024-04-14T03:45:49.024Z] Node Version:  v16.13.2
+[debug] [2024-04-14T03:45:49.025Z] Time:          Sat Apr 13 2024 23:45:49 GMT-0400 (Eastern Daylight Time)
+[debug] [2024-04-14T03:45:49.025Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-04-14T03:45:49.034Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-04-14T03:45:49.034Z] > authorizing via signed-in user (stevenelpocoamigo@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\steve\OneDrive\Escritorio\NucampFolder\NucampFolder\WebDev\1-Web-Dev-Fundamentals\portfolioProject
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project. 
+[debug] [2024-04-14T03:47:45.930Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects [none]
+[debug] [2024-04-14T03:47:45.930Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"projectId":"portfoli-01","name":"Portfolio - Steven Nunez"}
+[debug] [2024-04-14T03:47:46.425Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects 200
+[debug] [2024-04-14T03:47:46.425Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"name":"operations/cp.4747721992462843978"}
+[debug] [2024-04-14T03:47:46.426Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.4747721992462843978 [none]
+[debug] [2024-04-14T03:47:46.770Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.4747721992462843978 200
+[debug] [2024-04-14T03:47:46.770Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.4747721992462843978 {"name":"operations/cp.4747721992462843978"}
+[debug] [2024-04-14T03:47:47.282Z] [Project Creation Poller] Retrying task index 0
+[debug] [2024-04-14T03:47:47.282Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.4747721992462843978 [none]
+[debug] [2024-04-14T03:47:47.684Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.4747721992462843978 200
+[debug] [2024-04-14T03:47:47.684Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.4747721992462843978 {"name":"operations/cp.4747721992462843978","metadata":{"@type":"type.googleapis.com/google.cloudresourcemanager.v1.ProjectCreationStatus","ready":true},"done":true,"error":{"code":9,"message":"Callers must accept Terms of Service","details":[{"@type":"type.googleapis.com/google.rpc.PreconditionFailure","violations":[{"type":"TOS","subject":"cloud","description":"Callers must accept Terms of Service"}]}]}}
+[debug] [2024-04-14T03:47:47.837Z] FirebaseError: Callers must accept Terms of Service
+    at OperationPoller.poll (C:\Users\steve\AppData\Roaming\npm\node_modules\firebase-tools\lib\operation-poller.js:24:19)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async createCloudProject (C:\Users\steve\AppData\Roaming\npm\node_modules\firebase-tools\lib\management\projects.js:186:29)
+    at async createFirebaseProjectAndLog (C:\Users\steve\AppData\Roaming\npm\node_modules\firebase-tools\lib\management\projects.js:45:9)
+    at async promptAndCreateNewProject (C:\Users\steve\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\features\project.js:32:12)
+    at async doSetup (C:\Users\steve\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\features\project.js:88:27)
+    at async init (C:\Users\steve\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\index.js:41:9)
+[error] 
+[error] Error: Failed to create project. See firebase-debug.log for more info.
+[debug] [2024-04-14T04:03:38.368Z] ----------------------------------------------------------------------
+[debug] [2024-04-14T04:03:38.370Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\steve\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2024-04-14T04:03:38.371Z] CLI Version:   12.9.1
+[debug] [2024-04-14T04:03:38.371Z] Platform:      win32
+[debug] [2024-04-14T04:03:38.371Z] Node Version:  v16.13.2
+[debug] [2024-04-14T04:03:38.372Z] Time:          Sun Apr 14 2024 00:03:38 GMT-0400 (Eastern Daylight Time)
+[debug] [2024-04-14T04:03:38.373Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-04-14T04:03:38.381Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-04-14T04:03:38.381Z] > authorizing via signed-in user (stevenelpocoamigo@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\steve\OneDrive\Escritorio\NucampFolder\NucampFolder\WebDev\1-Web-Dev-Fundamentals\portfolioProject
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project. 
+[debug] [2024-04-14T04:04:42.718Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects [none]
+[debug] [2024-04-14T04:04:42.719Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"projectId":"portfolio-01","name":"portfolioProject"}
+[debug] [2024-04-14T04:04:43.110Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects 409
+[debug] [2024-04-14T04:04:43.110Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"error":{"code":409,"message":"Requested entity already exists","status":"ALREADY_EXISTS"}}
+[debug] [2024-04-14T04:04:43.239Z] FirebaseError: HTTP Error: 409, Requested entity already exists
+    at responseToError (C:\Users\steve\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:49:12)
+    at RetryOperation._fn (C:\Users\steve\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:285:77)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[error] 
+[error] Error: Failed to create project because there is already a project with ID portfolio-01. Please try again with a unique project ID.
+[debug] [2024-04-14T04:05:32.052Z] ----------------------------------------------------------------------
+[debug] [2024-04-14T04:05:32.054Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\steve\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2024-04-14T04:05:32.055Z] CLI Version:   12.9.1
+[debug] [2024-04-14T04:05:32.055Z] Platform:      win32
+[debug] [2024-04-14T04:05:32.055Z] Node Version:  v16.13.2
+[debug] [2024-04-14T04:05:32.057Z] Time:          Sun Apr 14 2024 00:05:32 GMT-0400 (Eastern Daylight Time)
+[debug] [2024-04-14T04:05:32.057Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-04-14T04:05:32.066Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-04-14T04:05:32.067Z] > authorizing via signed-in user (stevenelpocoamigo@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\steve\OneDrive\Escritorio\NucampFolder\NucampFolder\WebDev\1-Web-Dev-Fundamentals\portfolioProject
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project. 
+[debug] [2024-04-14T04:06:05.397Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects [none]
+[debug] [2024-04-14T04:06:05.397Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"projectId":"stnPortfolio","name":"portfolio12"}
+[debug] [2024-04-14T04:06:05.689Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects 400
+[debug] [2024-04-14T04:06:05.689Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"error":{"code":400,"message":"field [project_id] has issue [project_id contains invalid characters]","status":"INVALID_ARGUMENT","details":[{"@type":"type.googleapis.com/google.rpc.BadRequest","fieldViolations":[{"field":"project_id","description":"project_id contains invalid characters"}]},{"@type":"type.googleapis.com/google.rpc.Help","links":[{"url":"https://cloud.google.com/resource-manager/reference/rest/v1/projects"}]}]}}
+[debug] [2024-04-14T04:06:05.841Z] FirebaseError: HTTP Error: 400, field [project_id] has issue [project_id contains invalid characters]
+    at responseToError (C:\Users\steve\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:49:12)
+    at RetryOperation._fn (C:\Users\steve\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:285:77)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[error] 
+[error] Error: Failed to create project. See firebase-debug.log for more info.

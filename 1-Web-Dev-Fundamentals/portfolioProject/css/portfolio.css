@@ -1,0 +1,90 @@
+body{
+   
+    background-color: peachpuff;
+}
+
+header{
+    padding: 30px;
+    background-image: linear-gradient(peachpuff, orange, red);
+    /* min-height: 200px;
+    min-width: 100%; */
+}
+
+/* img{
+    border-radius: 50%;
+    border: 2px dashed black;
+    padding: 2px;
+} */
+
+.img-thumbnail{
+    max-width: 200px;
+}
+.project-img{
+    max-width: 90%;
+}
+
+.navbar{
+    background-color: red;
+    color: white ;
+}
+
+.main-card{
+    background-color: white;
+    border-radius: 15px;
+    margin: 15px;
+    padding: 15px;
+    
+}
+
+.main-card h2{
+    color: #77DD77;
+}
+
+.row-2{
+    margin-top: 30px;;
+}
+.card-title{
+    align-self: center;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    text-decoration: none;
+    color: black;
+}
+.skills-bar{
+    width: auto;
+    background-color: #DDD;
+}
+.skills{
+    text-align: right; 
+    padding-top: 10px; 
+    padding-bottom: 10px; 
+    color: white; 
+}
+
+.html{
+    width: 85%;
+    background-color: blue;
+}
+
+.css{
+    width: 75%;
+    background-color: red;
+}
+.bootstrap{
+    width: 80%;
+    background-color: green;
+}
+.download-instructions{
+    color: blue;
+}
+.container{
+    margin-top: 10px;
+}
